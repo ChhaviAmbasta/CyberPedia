@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #e0e0e0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  min-height: 100vh;
+}
+
+@layer components {
+  .cyber-button {
+    @apply bg-transparent border-2 border-cyber-primary text-cyber-primary 
+           px-6 py-2 font-mono uppercase tracking-wider
+           hover:bg-cyber-primary hover:text-cyber-dark
+           transition-all duration-300 ease-out
+           focus:outline-none focus:ring-2 focus:ring-cyber-primary focus:ring-offset-2 focus:ring-offset-cyber-dark;
+  }
+  
+  .cyber-input {
+    @apply bg-cyber-darker border-2 border-gray-700 text-gray-100
+           px-4 py-3 w-full font-mono
+           focus:border-cyber-primary focus:outline-none
+           transition-colors duration-300;
+  }
+  
+  .cyber-card {
+    @apply bg-cyber-darker border border-gray-800 p-6
+           hover:border-cyber-primary transition-colors duration-300;
+  }
+  
+  .terminal {
+    @apply bg-black border-2 border-gray-800 p-4 font-mono text-sm
+           overflow-auto;
+  }
+  
+  .terminal-output {
+    @apply text-cyber-primary;
+  }
+  
+  .terminal-prompt {
+    @apply text-cyber-accent;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  }
+  
+  .box-glow {
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  }
+  
+  .scan-line {
+    animation: scanLine 3s linear infinite;
+  }
+  
+  @keyframes scanLine {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff41;
+}

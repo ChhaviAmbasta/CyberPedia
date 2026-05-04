@@ -1,0 +1,14 @@
+{
+  "name": "cyberpedia",
+  "version": "1.0.0",
+  "description": "Interactive cybersecurity learning platform",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node backend/server.js",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

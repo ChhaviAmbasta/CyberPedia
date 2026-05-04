@@ -1,0 +1,341 @@
+{
+  "intro_hacking": {
+    "id": "intro_hacking",
+    "title": "What is Ethical Hacking",
+    "introduction": "Ethical hacking is the authorized and systematic process of identifying vulnerabilities in systems, networks, and applications to improve security. It involves using the same techniques as malicious hackers, but within a legal and controlled framework.",
+    "detailed_explanation": "Ethical hackers use the same tools and techniques as malicious hackers, but they operate with permission. Their goal is to identify weaknesses before attackers can exploit them. Organizations hire ethical hackers to perform penetration testing and security assessments.",
+    "sections": [
+      {
+        "heading": "Evolution of Ethical Hacking",
+        "content": "Ethical hacking evolved alongside the growth of the internet. Early hackers were curious programmers, but as cybercrime increased, organizations needed professionals to test and secure systems. Today, ethical hacking is a core part of cybersecurity."
+      },
+      {
+        "heading": "Core Purpose",
+        "content": "The main goal is to identify vulnerabilities, prevent cyber attacks, strengthen security systems, and ensure compliance with security standards."
+      },
+      {
+        "heading": "How Ethical Hacking Works",
+        "content": "Ethical hacking follows a structured process including reconnaissance, scanning, gaining access, maintaining access, and reporting vulnerabilities."
+      },
+      {
+        "heading": "Tools Used",
+        "content": "Common tools include Nmap for scanning, Metasploit for exploitation, and Burp Suite for web testing."
+      }
+    ],
+    "key_concepts": [
+      "Authorized hacking",
+      "Security testing",
+      "Vulnerability identification",
+      "Penetration testing",
+      "Risk assessment"
+    ],
+    "process_flow": [
+      "Reconnaissance (Information Gathering)",
+      "Scanning",
+      "Gaining Access",
+      "Maintaining Access",
+      "Reporting"
+    ],
+    "tools": [
+      "Nmap",
+      "Metasploit",
+      "Burp Suite",
+      "Wireshark",
+      "Hydra"
+    ],
+    "example": "A fintech company hires an ethical hacker to test their login system. The hacker identifies a SQL injection vulnerability, demonstrates its impact, and reports it to the company. The company fixes the issue before attackers can exploit it.",
+    "real_world_example": {
+      "title": "Fintech Security Testing",
+      "description": "A fintech company hires an ethical hacker to test their login system. The hacker identifies a SQL injection vulnerability, demonstrates its impact, and reports it to the company. The company fixes the issue before attackers can exploit it."
+    },
+    "comparison": {
+      "ethical_hacker": {
+        "intent": "Protect systems",
+        "permission": "Required",
+        "legal": "Legal",
+        "goal": "Security improvement"
+      },
+      "malicious_hacker": {
+        "intent": "Exploit systems",
+        "permission": "Not required",
+        "legal": "Illegal",
+        "goal": "Damage or theft"
+      }
+    },
+    "career_paths": [
+      "Penetration Tester",
+      "Security Analyst",
+      "Bug Bounty Hunter",
+      "Red Team Specialist"
+    ],
+    "challenges": [
+      "Constant learning required",
+      "Legal risks",
+      "Complex systems",
+      "High responsibility"
+    ],
+    "summary": "Ethical hacking is a critical cybersecurity practice focused on identifying and fixing vulnerabilities before attackers exploit them. It requires technical expertise, legal authorization, and strong ethical responsibility.",
+    "lab": false
+  },
+  "types_of_hackers": {
+    "id": "types_of_hackers",
+    "title": "Types of Hackers",
+    "introduction": "Hackers are individuals who use technical skills to interact with computer systems, networks, or applications. They are classified into various types including White Hat (ethical hackers), Black Hat (malicious hackers), Grey Hat (ambiguous hackers), Red Hat (vigilante hackers), Blue Hat (external testers), Green Hat (script kiddies), Hacktivists (activist hackers), and Nation-State hackers (government-backed hackers).",
+    "detailed_explanation": "Hackers are categorized into White Hat, Black Hat, and Grey Hat based on intent, authorization, and legality. The key difference lies not in skill, but in how those skills are used.",
+    "sections": [
+      {
+        "heading": "Core Understanding",
+        "content": "A hacker is not inherently good or bad. The same tools and techniques can be used to secure systems or exploit them. The key difference lies in intent and authorization."
+      },
+      {
+        "heading": "White Hat Hackers (Ethical Hackers)",
+        "content": "White Hat hackers are cybersecurity professionals who use their skills legally and ethically to protect systems. They work with permission to identify vulnerabilities and improve security.",
+        "subsections": [
+          {
+            "title": "Purpose",
+            "points": [
+              "Identify vulnerabilities",
+              "Improve system security",
+              "Prevent cyber attacks"
+            ]
+          },
+          {
+            "title": "Activities",
+            "points": [
+              "Penetration testing",
+              "Security audits",
+              "Vulnerability assessments"
+            ]
+          },
+          {
+            "title": "Characteristics",
+            "points": [
+              "Authorized access",
+              "Legal operations",
+              "Responsible disclosure"
+            ]
+          },
+          {
+            "title": "Example",
+            "content": "A company hires a White Hat hacker to test its website security. The hacker finds a vulnerability and reports it, allowing the company to fix the issue."
+          }
+        ]
+      },
+      {
+        "heading": "Black Hat Hackers (Malicious Hackers)",
+        "content": "Black Hat hackers use their skills for illegal and harmful purposes such as stealing data, causing damage, or gaining unauthorized access.",
+        "subsections": [
+          {
+            "title": "Purpose",
+            "points": [
+              "Financial gain",
+              "Data theft",
+              "System disruption"
+            ]
+          },
+          {
+            "title": "Activities",
+            "points": [
+              "Launching cyber attacks",
+              "Spreading malware",
+              "Stealing sensitive information"
+            ]
+          },
+          {
+            "title": "Characteristics",
+            "points": [
+              "No permission",
+              "Illegal actions",
+              "Hidden identity"
+            ]
+          },
+          {
+            "title": "Example",
+            "content": "A hacker breaks into a company database and steals customer credit card information for financial gain."
+          }
+        ]
+      },
+      {
+        "heading": "Grey Hat Hackers",
+        "content": "Grey Hat hackers operate between ethical and unethical boundaries. They may access systems without permission but typically do not have malicious intent.",
+        "subsections": [
+          {
+            "title": "Purpose",
+            "points": [
+              "Explore vulnerabilities",
+              "Expose weaknesses",
+              "Sometimes seek recognition or reward"
+            ]
+          },
+          {
+            "title": "Activities",
+            "points": [
+              "Unauthorized testing",
+              "Reporting vulnerabilities",
+              "Occasionally requesting compensation"
+            ]
+          },
+          {
+            "title": "Characteristics",
+            "points": [
+              "No formal authorization",
+              "Ethically ambiguous behavior",
+              "Not always harmful"
+            ]
+          },
+          {
+            "title": "Example",
+            "content": "A hacker finds a vulnerability in a website without permission and informs the company, sometimes expecting a reward."
+          }
+        ]
+      },
+      {
+        "heading": "Key Concepts",
+        "content": null,
+        "points": [
+          "Intent defines the type of hacker",
+          "Authorization determines legality",
+          "Same skills can be used for good or bad",
+          "Ethics play a crucial role in cybersecurity"
+        ]
+      },
+      {
+        "heading": "Comparison",
+        "content": null,
+        "table": [
+          {
+            "aspect": "Intent",
+            "white_hat": "Security",
+            "black_hat": "Exploitation",
+            "grey_hat": "Mixed"
+          },
+          {
+            "aspect": "Permission",
+            "white_hat": "Yes",
+            "black_hat": "No",
+            "grey_hat": "No"
+          },
+          {
+            "aspect": "Legal Status",
+            "white_hat": "Legal",
+            "black_hat": "Illegal",
+            "grey_hat": "Borderline"
+          },
+          {
+            "aspect": "Goal",
+            "white_hat": "Protect systems",
+            "black_hat": "Damage or steal",
+            "grey_hat": "Explore/report"
+          }
+        ]
+      },
+      {
+        "heading": "Real-World Scenario",
+        "content": "In a company system, a White Hat hacker tests with permission and helps fix vulnerabilities. A Black Hat hacker breaks in secretly and steals data. A Grey Hat hacker accesses the system without permission but reports the issue."
+      }
+    ],
+    "key_concepts": [
+      "White Hat - ethical",
+      "Black Hat - malicious",
+      "Grey Hat - mixed",
+      "Intent matters",
+      "Authorization is key"
+    ],
+    "comparison": {
+      "white_hat": {
+        "intent": "Protect systems",
+        "permission": "Required",
+        "legal": "Legal",
+        "goal": "Security improvement"
+      },
+      "black_hat": {
+        "intent": "Exploit systems",
+        "permission": "Not required",
+        "legal": "Illegal",
+        "goal": "Damage or theft"
+      },
+      "grey_hat": {
+        "intent": "Mixed",
+        "permission": "Not required",
+        "legal": "Borderline",
+        "goal": "Explore/report"
+      }
+    },
+    "real_world_example": {
+      "title": "Three Hackers, One Target",
+      "description": "In a company system, a White Hat hacker tests with permission and helps fix vulnerabilities. A Black Hat hacker breaks in secretly and steals data. A Grey Hat hacker accesses the system without permission but reports the issue."
+    },
+    "summary": "Hackers are categorized into White Hat, Black Hat, and Grey Hat based on intent, authorization, and legality. The key difference lies not in skill, but in how those skills are used.",
+    "lab": false
+  },
+  "legal_basics": {
+    "id": "legal_basics",
+    "title": "Legal Concepts in Hacking",
+    "introduction": "Ethical hacking must always follow legal boundaries.",
+    "detailed_explanation": "Accessing systems without permission is illegal. Ethical hackers must always have written authorization and defined scope before testing any system.",
+    "key_concepts": [
+      "Authorization",
+      "Legal compliance",
+      "Responsible disclosure"
+    ],
+    "example": "Testing your own system is legal, but hacking another company without permission is illegal.",
+    "summary": "Permission is the most important rule in cybersecurity.",
+    "lab": false
+  },
+  "footprinting": {
+    "id": "footprinting",
+    "title": "Footprinting",
+    "introduction": "Footprinting is the process of gathering information about a target.",
+    "detailed_explanation": "It involves collecting data such as IP addresses, domain details, and employee information. This can be done passively (without interaction) or actively.",
+    "key_concepts": [
+      "Passive reconnaissance",
+      "Active reconnaissance",
+      "Information gathering"
+    ],
+    "example": "Finding a company email format using LinkedIn.",
+    "summary": "Footprinting helps attackers understand their target before attacking.",
+    "lab": true
+  },
+  "osint": {
+    "id": "osint",
+    "title": "OSINT",
+    "introduction": "Open Source Intelligence involves gathering publicly available data.",
+    "detailed_explanation": "OSINT uses sources like search engines, social media, and public databases to gather intelligence without direct interaction with the target.",
+    "key_concepts": [
+      "Public data",
+      "Intelligence gathering",
+      "Non-intrusive methods"
+    ],
+    "example": "Finding sensitive information leaked on GitHub.",
+    "summary": "OSINT is powerful because it is legal and invisible.",
+    "lab": true
+  },
+  "port_scanning": {
+    "id": "port_scanning",
+    "title": "Port Scanning",
+    "introduction": "Port scanning identifies open ports on a system.",
+    "detailed_explanation": "Ports are communication endpoints. By scanning ports, attackers can identify running services and potential vulnerabilities.",
+    "key_concepts": [
+      "Open ports",
+      "Services",
+      "Attack surface"
+    ],
+    "example": "Using nmap to scan open ports on a server.",
+    "summary": "Open ports can expose vulnerabilities.",
+    "lab": true
+  },
+  "network_scanning": {
+    "id": "network_scanning",
+    "title": "Network Scanning",
+    "introduction": "Network scanning identifies devices on a network.",
+    "detailed_explanation": "It helps map network structure and detect active hosts using techniques like ping sweep and ARP scanning.",
+    "key_concepts": [
+      "Active hosts",
+      "Network mapping",
+      "IP ranges"
+    ],
+    "example": "Scanning all devices in a local network range.",
+    "summary": "Network scanning reveals the structure of a network.",
+    "lab": true
+  }
+}

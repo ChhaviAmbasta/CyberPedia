@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpedia Test</title>
+  <style>
+    body { 
+      background: #0a0a0f; 
+      color: #00ff41; 
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 { color: #00ff41; text-shadow: 0 0 10px rgba(0,255,65,0.5); }
+    .test { margin: 20px 0; padding: 15px; border: 1px solid #333; }
+    .success { color: #00ff41; }
+    .error { color: #ff4444; }
+    pre { background: #111; padding: 10px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h1>🔐 Cyberpedia API Test</h1>
+  
+  <div class="test" id="login-test">
+    <h3>Testing Login API...</h3>
+    <div id="login-result">Loading...</div>
+  </div>
+  
+  <div class="test" id="roadmap-test">
+    <h3>Testing Roadmap API...</h3>
+    <div id="roadmap-result">Loading...</div>
+  </div>
+  
+  <div class="test" id="content-test">
+    <h3>Testing Content API...</h3>
+    <div id="content-result">Loading...</div>
+  </div>
+  
+  <div class="test" id="lab-test">
+    <h3>Testing Lab API...</h3>
+    <div id="lab-result">Loading...</div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:5000/api';
+    
+    // Test Login
+    fetch(API_URL + '/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: 'demo', password: 'student' })
+    })
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('login-result').innerHTML = '<p class="success">✓ Login API Working!</p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+    })
+    .catch(err => {
+      document.getElementById('login-result').innerHTML = '<p class="error">✗ Login Failed: ' + err.message + '</p>';
+    });
+    
+    // Test Roadmap
+    fetch(API_URL + '/roadmap/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ domain: 'Ethical Hacking', level: 'Beginner', mode: 'Theory' })
+    })
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('roadmap-result').innerHTML = '<p class="success">✓ Roadmap API Working!</p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+    })
+    .catch(err => {
+      document.getElementById('roadmap-result').innerHTML = '<p class="error">✗ Roadmap Failed: ' + err.message + '</p>';
+    });
+    
+    // Test Content
+    fetch(API_URL + '/content/intro_hacking')
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('content-result').innerHTML = '<p class="success">✓ Content API Working!</p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+    })
+    .catch(err => {
+      document.getElementById('content-result').innerHTML = '<p class="error">✗ Content Failed: ' + err.message + '</p>';
+    });
+    
+    // Test Lab
+    fetch(API_URL + '/lab/execute', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ command: 'nmap' })
+    })
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('lab-result').innerHTML = '<p class="success">✓ Lab API Working!</p><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+    })
+    .catch(err => {
+      document.getElementById('lab-result').innerHTML = '<p class="error">✗ Lab Failed: ' + err.message + '</p>';
+    });
+  </script>
+</body>
+</html>

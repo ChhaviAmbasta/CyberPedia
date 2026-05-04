@@ -1,0 +1,7 @@
+{
+  "nmap": "PORT 22 open ssh\nPORT 80 open http\nPORT 443 open https",
+  "ping": "Reply from 192.168.1.1: bytes=32 time<1ms TTL=64",
+  "whois": "Domain registered to example.com",
+  "ls": "file1.txt folder/",
+  "pwd": "/home/user"
+}
